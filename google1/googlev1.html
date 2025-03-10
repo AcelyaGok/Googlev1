@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+         body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        img{
+            width: 25%;
+            height: auto;
+            margin-bottom: 20px;
+            align-items: center;
+       
+    }
+        .search-container {
+            text-align: center;
+        }
+
+        input {
+            width: 350px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #dfe1e5;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #dfe1e5;
+        }
+
+        .special-searches {
+           
+            text-align:left;
+            font-size: 18px;
+
+        }
+
+        .special-searches a {
+            display: block;
+            margin-top: 5px;
+            color: blue;
+            text-decoration:none;
+        }
+
+        .special-searches a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+    <img src="google.jpg" alt="google" >
+    <div class="search-container">
+        <p>Search the web using Google!</p>
+        <input type="text" name="search" id="search" style="width: 350px;  margin-left: -45px;">
+        
+    </div>
+    <div class="buttons">
+        <button onclick="search()" id="button1"> Google Search</button>
+        <button onclick="lucky()" id="button2">I'm Feeling Lucky</button>
+    </div>
+        
+    
+    <div class="special-searches">
+        <p id="p2">Special Searches</p>
+        <a href="https://www.stanford.edu/search/">Stanford Search</a>
+        <a href="https://yandex.com.tr/search?lr=11508 ">Yandex Search</a>
+    </div>
+
+</body>
+</html>
